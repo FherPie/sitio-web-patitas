@@ -12,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordForgotComponent } from './auth/password-forgot/password-forgot.component';
 import { OlvidoContrasenaComponent } from './auth/olvido-contrasena/olvido-contrasena.component';
-import { ListaFundacionesComponent } from './lista-fundaciones/lista-fundaciones.component';
 
 
 
@@ -25,7 +24,6 @@ import { ListaFundacionesComponent } from './lista-fundaciones/lista-fundaciones
     LoginComponent,
     PasswordForgotComponent,
     OlvidoContrasenaComponent,
-    ListaFundacionesComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +36,6 @@ import { ListaFundacionesComponent } from './lista-fundaciones/lista-fundaciones
     {path: 'registro-page', component: RegistroComponent},
     {path: 'olvido-contrasena', component: OlvidoContrasenaComponent},
     {path: 'login-page', component: LoginComponent},
-    {path: 'fundaciones-page', component: ListaFundacionesComponent},
     {path: 'p', redirectTo:'registro-page', pathMatch: 'full'},
     ]),
     HttpClientModule,
