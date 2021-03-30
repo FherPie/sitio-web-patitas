@@ -12,7 +12,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordForgotComponent } from './auth/password-forgot/password-forgot.component';
 import { OlvidoContrasenaComponent } from './auth/olvido-contrasena/olvido-contrasena.component';
-
+import { EscogitamientoRolComponent } from './auth/escogitamiento-rol/escogitamiento-rol.component';
+import { EscogitamientoAdoptarComponent } from './escogitamiento-adoptar-tipo/escogitamiento-adoptar.component';
+import { EscogitamientoAdoptarGeneroComponent} from './escogitamiento-adoptar-genero/escogitamiento-adoptar-genero.component';
+import { VistaCatalogoComponent } from './vista-catalogo/vista-catalogo.component';
 
 
 @NgModule({
@@ -24,6 +27,10 @@ import { OlvidoContrasenaComponent } from './auth/olvido-contrasena/olvido-contr
     LoginComponent,
     PasswordForgotComponent,
     OlvidoContrasenaComponent,
+    EscogitamientoRolComponent,
+    EscogitamientoAdoptarComponent,
+    EscogitamientoAdoptarGeneroComponent,
+    VistaCatalogoComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +44,10 @@ import { OlvidoContrasenaComponent } from './auth/olvido-contrasena/olvido-contr
     {path: 'olvido-contrasena', component: OlvidoContrasenaComponent},
     {path: 'login-page', component: LoginComponent},
     {path: 'p', redirectTo:'registro-page', pathMatch: 'full'},
+    {path: 'escogitamiento-rol-page', component: EscogitamientoRolComponent},
+    {path: 'escogitamiento-adoptar-page', component: EscogitamientoAdoptarComponent},
+    {path: 'escogitamiento-adoptar-genero-page', component: EscogitamientoAdoptarGeneroComponent},
+    {path: 'vista-catalogo', component: VistaCatalogoComponent},
     ]),
     HttpClientModule,
   ],
